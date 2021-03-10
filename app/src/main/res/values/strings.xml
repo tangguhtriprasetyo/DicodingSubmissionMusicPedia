@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">DicodingSubmissionMusicPedia</string>
+    <string name="app_name">MusicPedia</string>
     <string name="home">Home</string>
     <string name="favorite">Favorite</string>
     <string name="profile">Profile</string>
+    <string name="description">Deskripsi</string>
+    <string name="band_name">Nama Band</string>
 </resources>

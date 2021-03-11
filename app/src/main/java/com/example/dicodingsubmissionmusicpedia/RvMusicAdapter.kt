@@ -54,7 +54,7 @@ class RvMusicAdapter(private val listMusic: ArrayList<Music>) :
         holder.tvName.text = music.name
         holder.tvDescription.text = music.description
 
-        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listMusic[holder.adapterPosition]) }
+        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(filterList[holder.adapterPosition]) }
     }
 
     override fun getItemCount(): Int {

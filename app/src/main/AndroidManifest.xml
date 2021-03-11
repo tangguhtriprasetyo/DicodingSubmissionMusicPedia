@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DicodingSubmissionMusicPedia">
-        <activity android:name=".Activity.DetailActivity"></activity>
+        <activity android:name=".Activity.DetailActivity" />
         <activity android:name=".Activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

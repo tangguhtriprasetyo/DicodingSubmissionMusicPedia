@@ -5,4 +5,27 @@
     <string name="profile">Profile</string>
     <string name="description">Deskripsi</string>
     <string name="band_name">Nama Band</string>
+    <string name="tv_name">Nama</string>
+    <string name="tv_date">Tanggal Dibentuk</string>
+    <string name="tv_member">Anggota</string>
+    <string name="tv_title_album">Title Album Title Album</string>
+    <string name="tv_date_album">1992</string>
+    <string name="top_album">TOP 3 Album Terbaik :</string>
+    <string name="tv_about">Tentang Band Ini :</string>
+    <string name="btn_web">Kunjungi Official Web</string>
+    <string name="back_button">Kembali</string>
+    <string name="name">Tangguh Tri Prasetyo</string>
+    <string name="city">Semarang, Indonesia</string>
+    <string name="follower">123 K</string>
+    <string name="following">456 K</string>
+    <string name="followers">followers</string>
+    <string name="followings">following</string>
+    <string name="email_content">tangguhtriprasetyo@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="phone_content">+62 821 3827 3695</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="github">Github</string>
+    <string name="name_trim">tangguhtriprasetyo</string>
+    <string name="subtitle_app">Aplikasi Tentang Musisi di Seluruh Dunia. Cari Musisi Favoritmu Disini!</string>
 </resources>

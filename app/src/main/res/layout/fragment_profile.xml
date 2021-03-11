@@ -6,7 +6,7 @@
     tools:context=".Fragment.ProfileFragment">
 
     <RelativeLayout
-        android:id="@+id/rellay1"
+        android:id="@+id/relative_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_profile"
@@ -27,7 +27,7 @@
             style="@style/TitleContent"
             android:layout_below="@id/imgUser"
             android:layout_marginTop="16dp"
-            android:text="Tangguh Tri Prasetyo"
+            android:text="@string/name"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="32sp" />
@@ -39,8 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_name"
             android:layout_centerHorizontal="true"
-            android:fontFamily="sans-serif"
-            android:text="Semarang, Indonesia"
+            android:fontFamily="@font/roboto"
+            android:text="@string/city"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="14sp" />
@@ -48,81 +48,47 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/linlay1"
+        android:id="@+id/linear_subHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rellay1"
+        android:layout_below="@id/relative_header"
         android:orientation="horizontal">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/teal_200"
-            android:gravity="center"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
+            style="@style/RelativeProfile"
+            android:background="@color/teal_200">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+            <LinearLayout style="@style/LinearProfile">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/Title"
                     android:fontFamily="@font/roboto"
-                    android:text="123K"
-                    android:textColor="@color/white"
-                    android:textSize="25sp" />
+                    android:text="@string/follower"
+                    android:textColor="@color/white" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_light"
-                    android:text="followers"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textSize="13sp" />
+                    style="@style/ContentProfile"
+                    android:text="@string/followers" />
 
             </LinearLayout>
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/blue_light"
-            android:gravity="center"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
+            style="@style/RelativeProfile"
+            android:background="@color/blue_light">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+            <LinearLayout style="@style/LinearProfile">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/Title"
                     android:fontFamily="@font/roboto"
-                    android:text="321K"
-                    android:textColor="@color/white"
-                    android:textSize="25sp" />
+                    android:text="@string/following"
+                    android:textColor="@color/white" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_light"
-                    android:text="following"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textSize="13sp" />
+                    style="@style/ContentProfile"
+                    android:text="@string/followings" />
 
             </LinearLayout>
 
@@ -134,15 +100,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/linlay1">
+        android:layout_below="@+id/linear_subHeader">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="32dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -152,12 +118,12 @@
 
                 <TextView
                     style="@style/TitleContent"
-                    android:text="Email"
+                    android:text="@string/email"
                     android:textColor="@color/colorSubtitle" />
 
                 <TextView
                     style="@style/TextContent"
-                    android:text="tangguhtriprasetyo@gmail.com"
+                    android:text="@string/email_content"
                     android:textColor="@color/gray_dark"
                     android:textSize="16sp" />
 
@@ -177,12 +143,12 @@
 
                 <TextView
                     style="@style/TitleContent"
-                    android:text="Phone"
+                    android:text="@string/phone"
                     android:textColor="@color/colorSubtitle" />
 
                 <TextView
                     style="@style/TextContent"
-                    android:text="+62 821 3827 3695"
+                    android:text="@string/phone_content"
                     android:textColor="@color/gray_dark"
                     android:textSize="16sp" />
 
@@ -202,12 +168,12 @@
 
                 <TextView
                     style="@style/TitleContent"
-                    android:text="LinkedIn"
+                    android:text="@string/linkedin"
                     android:textColor="@color/colorSubtitle" />
 
                 <TextView
                     style="@style/TextContent"
-                    android:text="Tangguh Tri Prasetyo"
+                    android:text="@string/name"
                     android:textColor="@color/gray_dark"
                     android:textSize="16sp" />
 
@@ -227,12 +193,12 @@
 
                 <TextView
                     style="@style/TitleContent"
-                    android:text="Github"
+                    android:text="@string/github"
                     android:textColor="@color/colorSubtitle" />
 
                 <TextView
                     style="@style/TextContent"
-                    android:text="tangguhtriprasetyo"
+                    android:text="@string/name_trim"
                     android:textColor="@color/gray_dark"
                     android:textSize="16sp" />
 
@@ -243,10 +209,6 @@
                     android:background="@color/gray_light" />
 
             </LinearLayout>
-
-
         </LinearLayout>
-
     </RelativeLayout>
-
 </RelativeLayout>
